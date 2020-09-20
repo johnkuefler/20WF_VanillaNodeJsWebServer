@@ -8,9 +8,7 @@ const ageGetter = require('./ageGetterModule');
 http.createServer(function (req, res) {
 
     try {
-        res.end(
-            JSON.stringify(ageGetter.getAgeFromDate(new Date('October 13, 2000')))
-            );
+        res.end(JSON.stringify(ageGetter.getAgeFromDate(new Date('October 13, 2000'))));
     } catch(err) {
         // do something with error
         res.end(err.message)
