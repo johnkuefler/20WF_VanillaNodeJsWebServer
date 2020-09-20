@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
 
     try {
         res.end(
-            JSON.stringify(ageGetter.getAgeFromDate(new Date('October 13, 2021')))
+            JSON.stringify(ageGetter.getAgeFromDate(new Date('October 13, 2000')))
             );
     } catch(err) {
         // do something with error
